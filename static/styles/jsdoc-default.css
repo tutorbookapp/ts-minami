@@ -438,6 +438,10 @@ footer {
    user-select: text;
 }
 
+.table-container {
+  overflow-y: scroll;
+}
+
 table {
   border-spacing: 0;
   border: 1px solid #ddd;
@@ -455,7 +459,7 @@ table {
    font-size: 100%;
 }
 
-.params td, .params th, .props td, .props th {
+table td, table th {
    margin: 0px;
    text-align: left;
    vertical-align: top;
@@ -463,16 +467,24 @@ table {
    display: table-cell;
 }
 
-.params td {
+table td {
    border-top: 1px solid #eee
 }
 
-.params thead tr, .props thead tr {
+.props td {
+   border-top: none;
+}
+
+.props thead {
+   border-bottom: 1px solid #eee
+}
+
+table thead tr {
    background-color: #fff;
    font-weight: bold;
 }
 
-.params .params thead tr, .props .props thead tr {
+table table thead tr {
    background-color: #fff;
    font-weight: bold;
 }
@@ -677,6 +689,10 @@ dl.param-type {
 
   footer {
     margin-left: 0;
+  }
+
+  table td, table th {
+    white-space: nowrap;
   }
 }
 
