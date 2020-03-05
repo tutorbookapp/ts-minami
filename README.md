@@ -2,13 +2,18 @@
 
 A clean, responsive documentation template theme for JSDoc 3.
 
+Currently used for Tutorbook's open source
+[documentation](https://tutorbook.app/docs).
+
+Forked from [this repository](https://github.com/Nijikokun/minami).
+
 ![Minami Screenshot](http://i.imgur.com/rPCIFqT.png)
 
 
 ## Uses
 
-- [the Taffy Database library](http://taffydb.com/)
-- [Underscore Template library](http://underscorejs.org/#template)
+- [Taffy Database](http://taffydb.com/)
+- [Underscore Template](http://underscorejs.org/#template)
 - [Montserrat](https://fonts.google.com/specimen/Montserrat) & Helvetica Neue
 
 
