@@ -7,13 +7,13 @@ Currently used for Tutorbook's open source
 
 Forked from [this repository](https://github.com/Nijikokun/minami).
 
-![Minami Screenshot](http://i.imgur.com/rPCIFqT.png)
+![Minami Screenshot](https://i.imgur.com/rPCIFqT.png)
 
 
 ## Uses
 
-- [Taffy Database](http://taffydb.com/)
-- [Underscore Template](http://underscorejs.org/#template)
+- [Taffy Database](https://taffydb.com/)
+- [Underscore Template](https://underscorejs.org/#template)
 - [Montserrat](https://fonts.google.com/specimen/Montserrat) & Helvetica Neue
 
 
