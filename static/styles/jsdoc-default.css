@@ -438,7 +438,7 @@ footer {
    user-select: text;
 }
 
-.params, .props {
+table {
   border-spacing: 0;
   border: 1px solid #ddd;
   border-collapse: collapse;
