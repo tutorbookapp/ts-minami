@@ -1,11 +1,8 @@
 # Minami
 
-A clean, responsive documentation template theme for JSDoc 3.
-
-Currently used for Tutorbook's open source
-[documentation](https://tutorbook.app/docs).
-
-Forked from [this repository](https://github.com/Nijikokun/minami).
+A clean, responsive documentation template theme for JSDoc 3. Currently used for
+[Tutorbook's open source documentation](https://tutorbook.app/docs). Forked from
+[this repository](https://github.com/Nijikokun/minami).
 
 ![Minami Screenshot](https://i.imgur.com/rPCIFqT.png)
 
@@ -20,13 +17,16 @@ Forked from [this repository](https://github.com/Nijikokun/minami).
 ## Install
 
 ```bash
-$ npm install --save-dev minami
+$ npm install --save-dev @tutorbook/minami
 ```
 
 
 ## Usage
 
-Clone repository to your designated `jsdoc` template directory, then:
+Clone repository to your designated `jsdoc` template directory. First make sure
+that you update (or remove) our [Algolia
+Docsearch](https://docsearch.algolia.com) key and app ID from `tmpl/layout.tmpl`
+. Then run:
 
 ```bash
 $ jsdoc entry-file.js -t path/to/minami
@@ -47,7 +47,7 @@ In your `.jsdoc.json` file, add a template option.
 
 ```json
 "opts": {
-  "template": "node_modules/minami"
+  "template": "node_modules/@tutorbook/minami"
 }
 ```
 
@@ -79,12 +79,13 @@ In your `.jsdoc.json` file, add a template option.
         "encoding": "utf8",
         "private": true,
         "recurse": true,
-        "template": "./node_modules/minami"
+        "template": "./node_modules/@tutorbook/minami"
     }
 }
 ```
 
-Specifying a number for useLongnameInNav it will be the max number of path elements to show in nav (starting from Class).
+Specifying a number for `useLongnameInNav` it will be the max number of path
+elements to show in nav (starting from Class).
 
 
 ## License
