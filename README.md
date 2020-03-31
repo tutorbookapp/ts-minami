@@ -1,7 +1,7 @@
 # Minami
 
 A clean, responsive documentation template theme for JSDoc 3. Currently used for
-[Tutorbook's open source documentation](https://tutorbook.app/docs). Forked from
+[Tutorbook's open source documentation](https://tutorbook.app/docs/). Forked from
 [this repository](https://github.com/Nijikokun/minami).
 
 ![Minami Screenshot](https://i.imgur.com/rPCIFqT.png)
