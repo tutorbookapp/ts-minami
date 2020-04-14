@@ -7,22 +7,23 @@
       {{/each}}
       {{{wbr name}}}
     </h4>
+  {{/if}}
 
-    {{#if signatures}}
-      {{> member.signatures}}
-    {{else}}{{#if hasGetterOrSetter}}
-      {{> member.getterSetter}}
-    {{else}}{{#if isReference}}
-      {{> member.reference}}
-    {{else}}
-      {{> member.declaration}}
-    {{/if}}{{/if}}{{/if}}
+  {{#if signatures}}
+    {{> member.signatures}}
+  {{else}}{{#if hasGetterOrSetter}}
+    {{> member.getterSetter}}
+  {{else}}{{#if isReference}}
+    {{> member.reference}}
+  {{else}}
+    {{> member.declaration}}
+  {{/if}}{{/if}}{{/if}}
 
-    {{#each groups}}
-      {{#each children}}
-        {{#unless hasOwnDocument}}
-          {{> member}}
-        {{/unless}}
-      {{/each}}
+  {{#each groups}}
+    {{#each children}}
+      {{#unless hasOwnDocument}}
+        {{> member}}
+      {{/unless}}
     {{/each}}
+  {{/each}}
 </div>
