@@ -1,11 +1,13 @@
 # Minami
 
-A clean, responsive documentation template theme for JSDoc 3. Currently used for
-[Tutorbook's open source documentation](https://tutorbook.app/docs/). Forked from
+A clean, responsive documentation template theme for
+[TypeDoc](https://typedoc.org) (adapted from our [original Minami
+template](https://github.com/tutorbookapp/minami) for [JSDoc
+3](https://jsdoc.app)). Currently used for the [COVID Tutoring Initiative's open 
+source documentation](https://covidtutoring.org/docs/). Originally forked from 
 [this repository](https://github.com/Nijikokun/minami).
 
 ![Minami Screenshot](https://i.imgur.com/rPCIFqT.png)
-
 
 ## Uses
 
@@ -13,13 +15,11 @@ A clean, responsive documentation template theme for JSDoc 3. Currently used for
 - [Underscore Template](https://underscorejs.org/#template)
 - [Montserrat](https://fonts.google.com/specimen/Montserrat) & Helvetica Neue
 
-
 ## Install
 
 ```bash
-$ npm install --save-dev @tutorbook/minami
+$ npm install --save-dev @tutorbook/ts-minami
 ```
-
 
 ## Usage
 
@@ -29,9 +29,8 @@ Docsearch](https://docsearch.algolia.com) key and app ID from `tmpl/layout.tmpl`
 . Then run:
 
 ```bash
-$ jsdoc entry-file.js -t path/to/minami
+$ jsdoc entry-file.js -t path/to/ts-minami
 ```
-
 
 ### Node.js Dependency
 
@@ -47,46 +46,9 @@ In your `.jsdoc.json` file, add a template option.
 
 ```json
 "opts": {
-  "template": "node_modules/@tutorbook/minami"
+  "template": "node_modules/@tutorbook/ts-minami"
 }
 ```
-
-
-### Example JSDoc Config
-
-```json
-{
-    "tags": {
-        "allowUnknownTags": true,
-        "dictionaries": ["jsdoc"]
-    },
-    "source": {
-        "include": ["lib", "package.json", "README.md"],
-        "includePattern": ".js$",
-        "excludePattern": "(node_modules/|docs)"
-    },
-    "plugins": [
-        "plugins/markdown"
-    ],
-    "templates": {
-        "cleverLinks": false,
-        "monospaceLinks": true,
-        "useLongnameInNav": false,
-        "showInheritedInNav": true
-    },
-    "opts": {
-        "destination": "./docs/",
-        "encoding": "utf8",
-        "private": true,
-        "recurse": true,
-        "template": "./node_modules/@tutorbook/minami"
-    }
-}
-```
-
-Specifying a number for `useLongnameInNav` it will be the max number of path
-elements to show in nav (starting from Class).
-
 
 ## License
 

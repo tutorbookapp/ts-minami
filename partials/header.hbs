@@ -1,0 +1,14 @@
+<h1 class="page-title">
+  {{#compact}}
+    {{model.kindString}}&nbsp;
+    {{model.name}}
+    {{#if model.typeParameters}}
+      &lt;
+      {{#each model.typeParameters}}
+        {{#if @index}},&nbsp;{{/if}}
+        {{name}}
+      {{/each}}
+      &gt;
+    {{/if}}
+  {{/compact}}
+</h1>
