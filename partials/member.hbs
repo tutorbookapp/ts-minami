@@ -1,11 +1,29 @@
-<div class="section-members">
+<div class="section-method">
   <a name="{{anchor}}" class="tsd-anchor"></a>
   {{#if name}}
     <h4 class="name">
       {{#each flags}}
-        <span class="tsd-flag ts-flag{{this}}">{{this}}</span>
+        <span class="type-signature">({{this}}) </span>
+      {{/each}}<!--
+      -->{{name}}<!--
+      -->{{#each signatures}}
+        <span class="signature">(
+          {{#each parameters}}
+            {{#if @index}}, {{/if}}
+            {{#if flags.isRest}}
+              <span class="signature-attributes">...</span>
+            {{/if}}
+            {{name}}
+            <span class="signature-attributes">
+              {{#if flags.isOptional}}opt{{/if}}
+              {{#if defaultValue}}opt{{/if}}
+            </span>
+          {{/each}}<!--
+        -->)</span>
+        {{#if type}}
+          <span class="type-signature"> → <span>{</span>{{#with type}}{{>type}}{{/with}}<span>}</span></span>
+        {{/if}}
       {{/each}}
-      {{{wbr name}}}
     </h4>
   {{/if}}
 

@@ -1,20 +1,18 @@
 {{#if categories}}
-    {{#each categories}}
-        {{#unless allChildrenHaveOwnDocument}}
-            <section class="tsd-panel-group tsd-member-group {{cssClasses}}">
-                <h2>{{title}}</h2>
-                {{#each children}}
-                    {{#unless hasOwnDocument}}
-                        {{> member}}
-                    {{/unless}}
-                {{/each}}
-            </section>
+  {{#each categories}}
+    {{#unless allChildrenHaveOwnDocument}}
+      <h3 class="subsection-title">{{title}}</h3>
+      {{#each children}}
+        {{#unless hasOwnDocument}}
+          {{> member}}
         {{/unless}}
-    {{/each}}
+      {{/each}}
+    {{/unless}}
+  {{/each}}
 {{else}}
-    {{#each groups}}
-        {{#unless allChildrenHaveOwnDocument}}
-            {{> members.group}}
-        {{/unless}}
-    {{/each}}
+  {{#each groups}}
+    {{#unless allChildrenHaveOwnDocument}}
+      {{> members.group}}
+    {{/unless}}
+  {{/each}}
 {{/if}}

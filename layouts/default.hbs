@@ -54,9 +54,11 @@
 <label for="nav-trigger" class="overlay"></label>
 
 <nav>
-  <li class="nav-search">
-    <input id="search" placeholder="Search documentation...">
-  </li>
+  {{!-- 
+        <li class="nav-search">
+          <input id="search" placeholder="Search documentation...">
+        </li>
+        --}}
   {{#each navigation.children}}
     {{> navigation}}
   {{/each}}
